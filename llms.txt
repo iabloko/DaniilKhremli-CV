@@ -1,0 +1,55 @@
+# Daniil Khremli
+
+Senior Unity Developer with 9+ years of experience in Unity/C#, WebGL, multiplayer, Photon Fusion, Zenject, UniTask, Addressables, AR/VR and mobile development.
+
+## Main pages
+
+- English CV: https://YOUR_GITHUB_PAGES_URL/cv-en/index-en.html
+- Russian CV: https://YOUR_GITHUB_PAGES_URL/cv-ru/index-ru.html
+- Portfolio: https://daniilkhremli.notion.site/Khremli-Daniil-3558e0cfb75980f28465c7d441dc53a8?pvs=74
+- Telegram: https://t.me/labloko
+- Email: dxsunty@gmail.com
+
+## Positioning
+
+Daniil is a Senior Unity Developer focused on production Unity architecture, WebGL optimization, multiplayer gameplay systems, Photon Fusion, Addressables, SDK integrations and release preparation for browser/mobile platforms.
+
+## Core expertise
+
+- Unity/C#
+- WebGL optimization
+- Photon Fusion / Photon PUN 2
+- Multiplayer gameplay systems
+- Network state synchronization
+- Addressables and asset pipeline optimization
+- Zenject / dependency injection
+- UniTask / async workflows
+- REST API / WebSocket integrations
+- CrazyGames / Yandex Games / Telegram Mini Apps
+- AR/VR and mobile development
+- Team leadership, code reviews and mentoring
+
+## Projects
+
+### Megamod Games
+
+WebGL UGC platform with multiplayer gameplay, Addressables, monetization and external platform releases. Impact includes 30% faster initial WebGL loading and 50% lower memory usage.
+
+Project link: https://www.crazygames.com/game/megamodgames
+
+### Pixel World
+
+WebGL multiplayer shooter for Telegram Mini Apps. The project supports thousands of daily players, in-app purchases and shareable player statistics. Technical stack includes Unity, WebGL, Photon Fusion, Addressables, IAPs and gameplay/network systems.
+
+Project link: https://pw.game/
+
+### Portfolio
+
+Collection of Unity projects, videos and production examples.
+
+Portfolio link: https://daniilkhremli.notion.site/Khremli-Daniil-3558e0cfb75980f28465c7d441dc53a8?pvs=74
+
+## Languages
+
+- Russian: native
+- English: B1
