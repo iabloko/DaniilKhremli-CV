@@ -2,22 +2,30 @@
 
 Senior Unity Developer with 9+ years of experience in Unity/C#, WebGL, multiplayer, Photon Fusion, Zenject, UniTask, Addressables, AR/VR and mobile development.
 
+Primary CV website: https://iabloko.github.io/DaniilKhremli-CV/
+
 ## Main pages
 
-- English CV: https://YOUR_GITHUB_PAGES_URL/cv-en/index-en.html
-- Russian CV: https://YOUR_GITHUB_PAGES_URL/cv-ru/index-ru.html
+- Main CV landing page: https://iabloko.github.io/DaniilKhremli-CV/
+- English CV: https://iabloko.github.io/DaniilKhremli-CV/cv-en/index-en.html
+- Russian CV: https://iabloko.github.io/DaniilKhremli-CV/cv-ru/index-ru.html
 - Portfolio: https://daniilkhremli.notion.site/Khremli-Daniil-3558e0cfb75980f28465c7d441dc53a8?pvs=74
 - Telegram: https://t.me/labloko
 - Email: dxsunty@gmail.com
 
 ## Positioning
 
-Daniil is a Senior Unity Developer focused on production Unity architecture, WebGL optimization, multiplayer gameplay systems, Photon Fusion, Addressables, SDK integrations and release preparation for browser/mobile platforms.
+Daniil Khremli is a Senior Unity Developer focused on production Unity architecture, WebGL optimization, multiplayer gameplay systems, Photon Fusion, runtime content streaming, Addressables, SDK integrations and release preparation for browser/mobile platforms.
+
+He has experience building Unity projects from scratch, owning client-side architecture, optimizing heavy WebGL runtimes, integrating backend APIs and shipping games to external platforms such as CrazyGames, Yandex Games and Telegram Mini Apps.
 
 ## Core expertise
 
 - Unity/C#
 - WebGL optimization
+- WebGL memory and rendering optimization
+- Runtime content streaming
+- Chunk-based / cell-based world loading
 - Photon Fusion / Photon PUN 2
 - Multiplayer gameplay systems
 - Network state synchronization
@@ -25,29 +33,116 @@ Daniil is a Senior Unity Developer focused on production Unity architecture, Web
 - Zenject / dependency injection
 - UniTask / async workflows
 - REST API / WebSocket integrations
+- GPUI PRO / instancing optimization
+- Binary data pipelines
 - CrazyGames / Yandex Games / Telegram Mini Apps
 - AR/VR and mobile development
 - Team leadership, code reviews and mentoring
+
+## Key achievements
+
+- Designed and developed the client-side architecture of a WebGL UGC platform from scratch.
+- Reduced WebGL browser tab memory usage by approximately 80%, from about 1.9 GB to about 400 MB.
+- Reduced rendering load by approximately 40% through render pipeline optimization, batching/instancing, active object control and reducing unnecessary per-frame work.
+- Improved initial WebGL loading by approximately 30%.
+- Developed chunk/cell-based runtime world streaming to load and unload user-generated content by zones instead of keeping the full world in browser memory.
+- Optimized client-side REST API communication by reducing redundant backend requests, improving data loading order, error handling, retry scenarios and networking stability.
+- Optimized a large city-scale point cloud / instancing dataset from 1.5 GB to 300 MB.
+- Improved city scene runtime performance from about 9 FPS to stable 60 FPS.
+- Reduced CPU/GPU load for a city-scale WebGL instancing scene by roughly 90% and eliminated overheating on a mobile device.
+- Migrated a production project from Photon PUN 2 to Photon Fusion 2.1.
+- Led a team of 3 Unity developers through code reviews, coding standards, mentoring and codebase stabilization.
 
 ## Projects
 
 ### Megamod Games
 
-WebGL UGC platform with multiplayer gameplay, Addressables, monetization and external platform releases. Impact includes 30% faster initial WebGL loading and 50% lower memory usage.
+WebGL UGC platform with multiplayer gameplay, user-generated worlds, runtime content loading, monetization and external platform releases.
+
+Role: Senior Unity Developer / client-side architecture owner.
+
+Impact:
+- Designed and developed the client-side architecture of the UGC platform using Unity, Zenject and UniTask.
+- Built gameplay systems, multiplayer integration, asset workflows and runtime loading of user-generated worlds.
+- Reduced browser tab memory usage by approximately 80%, from about 1.9 GB to about 400 MB.
+- Reduced rendering load by approximately 40%.
+- Improved initial WebGL loading by approximately 30%.
+- Developed chunk/cell-based runtime streaming for user-generated worlds.
+- Optimized Addressables, asset lifecycle, loaded data ownership and runtime resource cleanup.
+- Optimized REST API communication and improved client networking stability.
+- Solved key UGC/WebGL bottlenecks: heavy user-generated scenes, browser memory pressure, slow initial loading, weak-device instability, runtime content streaming, resource cleanup and FPS degradation as object count increased.
+
+Stack: Unity, WebGL, Photon Fusion, Zenject, UniTask, Addressables, REST API, WebSocket, Xsolla IAP, CrazyGames SDK, Yandex Games SDK.
 
 Project link: https://www.crazygames.com/game/megamodgames
 
+### San Francisco City Streaming
+
+City-scale WebGL point cloud / GPUI PRO runtime streaming optimization project.
+
+Role: Senior Unity Developer / owner of city streaming runtime architecture.
+
+Impact:
+- Converted a heavy monolithic point cloud / instancing dataset into a cell-based streaming system.
+- Reduced the source point cloud dataset from 1.5 GB to 300 MB.
+- Improved runtime performance from about 9 FPS to stable 60 FPS.
+- Reduced CPU/GPU load by roughly 90%.
+- Eliminated overheating on a mobile device.
+- Implemented a production data pipeline: CSV source data -> binary chunks -> per-cell metadata -> runtime cell catalog -> GPUI batch upload.
+- Loaded only required city areas around the player and unloaded inactive cells at runtime.
+- Designed systems for runtime grid lookup, desired-cell planning, state tracking, controlled unload flow and batched GPUI uploads.
+
+Stack: Unity, Mobile, Android, iOS, Addressables, GPUI PRO, binary data pipeline, runtime streaming, batching, object pooling.
+
 ### Pixel World
 
-WebGL multiplayer shooter for Telegram Mini Apps. The project supports thousands of daily players, in-app purchases and shareable player statistics. Technical stack includes Unity, WebGL, Photon Fusion, Addressables, IAPs and gameplay/network systems.
+WebGL multiplayer shooter for Telegram Mini Apps.
+
+Role: Senior Unity Developer.
+
+Impact:
+- Migrated and improved gameplay/network systems for movement, animation, shooting, state synchronization and weapon integration.
+- Worked with Photon Fusion, Addressables, IAPs and WebGL runtime constraints.
+- Prepared the project for CrazyGames publication and resolved platform-specific WebGL release issues.
+- The project supports thousands of daily players, in-app purchases and shareable player statistics.
+
+Stack: Unity, WebGL, Photon Fusion, Addressables, IAPs, gameplay/network systems.
 
 Project link: https://pw.game/
 
 ### Portfolio
 
-Collection of Unity projects, videos and production examples.
+Collection of Unity projects, gameplay videos and production examples focused on WebGL, mobile, AR/VR, multiplayer gameplay, performance optimization and client architecture.
 
 Portfolio link: https://daniilkhremli.notion.site/Khremli-Daniil-3558e0cfb75980f28465c7d441dc53a8?pvs=74
+
+## Work experience summary
+
+### Pixel World Games
+Senior Unity Developer, November 2025 — April 2026.
+
+Focus: Telegram Mini App, gameplay/network systems, Photon Fusion migration, WebGL release preparation.
+
+### UNIBIT LLC / ONLYSPACE ONLINE GAMING SERVICES L.L.C
+Senior Unity Developer, March 2022 — November 2025.
+
+Focus: WebGL UGC platform, client-side architecture, Photon Fusion, Zenject, UniTask, Addressables, WebGL optimization, SDK integrations, external platform releases and team leadership.
+
+### DSoneGames
+Unity3D Developer, October 2020 — February 2022.
+
+Focus: mobile hyper-casual games, SDK integrations, analytics and performance optimization for low-end devices.
+
+### Ascreen
+Junior Unity3D Developer, January 2017 — October 2020.
+
+Focus: AR/VR B2B applications, Vuforia, Oculus Rift, HTC Vive, SteamVR, Oculus SDK and VRTK.
+
+## Education
+
+Master's degree, 2017.
+Bonch-Bruevich Saint Petersburg State University of Telecommunications.
+Radio Engineering Systems / Audiovisual Technology.
 
 ## Languages
 
