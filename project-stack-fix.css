@@ -1,0 +1,116 @@
+/*
+    Project cards row-based alignment fix.
+    Connect this file AFTER styles.css / styles-symmetric.css:
+
+    <link rel="stylesheet" href="../project-card-row-align.css" />
+
+    Why this exists:
+    The project cards have different amounts of text.
+    A single global min-height for all .project-points makes the first row acceptable,
+    but creates ugly empty gaps in shorter cards like Pixel World / Portfolio.
+    This file aligns cards per visual row instead of forcing one height for every card.
+*/
+
+@media (min-width: 901px) {
+    #projects .grid-2 {
+        align-items: stretch;
+    }
+
+    #projects .project-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects .project-card .muted {
+        min-height: 52px;
+        margin-bottom: 22px;
+    }
+
+    #projects .project-card .project-description {
+        margin-bottom: 24px;
+    }
+
+    #projects .project-card .project-metrics {
+        margin-bottom: 24px;
+    }
+
+    #projects .project-card .project-points {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #projects .project-card .project-stack {
+        margin-top: 0;
+        margin-bottom: 22px;
+    }
+
+    #projects .project-card > a {
+        margin-top: auto;
+    }
+
+    /*
+        Row 1:
+        Megamod Games + San Francisco City Streaming.
+        These are the heaviest technical cards, so they need a taller bullet area.
+    */
+    #projects .project-card:nth-child(1) .project-description,
+    #projects .project-card:nth-child(2) .project-description {
+        min-height: 132px;
+    }
+
+    #projects .project-card:nth-child(1) .project-metrics,
+    #projects .project-card:nth-child(2) .project-metrics {
+        min-height: 112px;
+    }
+
+    #projects .project-card:nth-child(1) .project-points,
+    #projects .project-card:nth-child(2) .project-points {
+        min-height: 390px;
+    }
+
+    #projects .project-card:nth-child(1) .project-stack,
+    #projects .project-card:nth-child(2) .project-stack {
+        min-height: 78px;
+    }
+
+    /*
+        Row 2:
+        Pixel World + Portfolio.
+        These cards are shorter. Do NOT use the same bullet height as row 1,
+        otherwise the stack block falls too low and the card looks empty.
+    */
+    #projects .project-card:nth-child(3) .project-description,
+    #projects .project-card:nth-child(4) .project-description {
+        min-height: 108px;
+    }
+
+    #projects .project-card:nth-child(3) .project-metrics,
+    #projects .project-card:nth-child(4) .project-metrics {
+        min-height: 112px;
+    }
+
+    #projects .project-card:nth-child(3) .project-points,
+    #projects .project-card:nth-child(4) .project-points {
+        min-height: 285px;
+    }
+
+    #projects .project-card:nth-child(3) .project-stack,
+    #projects .project-card:nth-child(4) .project-stack {
+        min-height: 58px;
+    }
+}
+
+@media (max-width: 900px) {
+    #projects .project-card .muted,
+    #projects .project-card .project-description,
+    #projects .project-card .project-metrics,
+    #projects .project-card .project-points,
+    #projects .project-card .project-stack {
+        min-height: auto;
+        margin-bottom: initial;
+    }
+
+    #projects .project-card > a {
+        margin-top: auto;
+    }
+}
